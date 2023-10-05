@@ -1,18 +1,33 @@
 ## sentense-changer
 
-sentence-changer is a javascript library that can be used to change the first 
-word of a sentence from lowercase to Uppercase
+The sentence-changer is a javascript library that can be used to change the first 
+letter of a sentence from lowercase to Uppercase
 
 ## installation
-Use the package manager npm to install the sentence-changer(npm install sentence-changer)
+You can install the sentence-changer using npm:
+npm install sentence-changer
 
 ## Usage
+function toSentenceCase(str){
+    return str.toLowerCase().charAt(0).toUpperCase() + str.slice(1);;
+} 
 
-export: module.exports ={toSentenceCase} in the index.js file
+console.log(toSentenceCase('bassajjasubi kamir')); 
 
-import: const {toSentenceCase} = require("./index.js") in the result.js file for usage
+//output: 'Bassajjasubi kamir'
 
-Testing: console.log(toSentenceCase('bassajjasubi kamir')) result shall be Bassajjasubi kamir
+## functionalty
+    * To do this take the first character charAt(0) of the string and convert it to uppercase toUpperCase and then simply append the rest of the string str.slice(1) to the first already capitalized letter.
+
+    * Example:
+
+function toSentenceCase(str){
+    return str.toLowerCase().charAt(0).toUpperCase() + str.slice(1);;
+} 
+
+console.log(toSentenceCase('eugene katusime')); 
+
+//output: 'Eugene katusime'
 
 ## contribution
 Pull requests are welcome. For major changes, please open an issue first
